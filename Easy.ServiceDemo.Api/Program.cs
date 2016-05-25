@@ -14,7 +14,7 @@ namespace Easy.ServiceDemo.Api
     {
         static void Main(string[] args)
         {
-            string ip = IpHelper.LoopbackIp();
+            string ip = IpHelper.InternetIp4();
             int port = GetPort(ip);
 
             string baseUrl = string.Format("http://{0}:{1}/", ip, port);
