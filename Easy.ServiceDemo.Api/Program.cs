@@ -20,6 +20,7 @@ namespace Easy.ServiceDemo.Api
             string baseUrl = string.Format("http://{0}:{1}/", ip, port);
             using (WebApp.Start<Startup>(new StartOptions(baseUrl)))
             {
+                System.Console.WriteLine(baseUrl);
                 System.Console.WriteLine("服务启动中...");
                 while (true)
                 {
