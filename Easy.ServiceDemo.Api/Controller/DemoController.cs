@@ -14,7 +14,7 @@ namespace Easy.ServiceDemo.Api.Controller
         [HttpGet]
         public ResultWithData<string> SayHello(string name,int age)
         {
-            return new ResultWithData<string>(200,string.Format("你好，我是：{0}，今年{1}岁 -- {2}",name,age,DateTime.Now));
+            return new ResultWithData<string>(200,string.Format("你好，我是：{0}，今年{1}岁 -- {2}",name,age,DateTime.Now.ToString()));
         }
 
         [HttpPost]
