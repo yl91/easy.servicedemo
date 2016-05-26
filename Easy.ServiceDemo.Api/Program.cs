@@ -25,7 +25,6 @@ namespace Easy.ServiceDemo.Api
             {
                 string registerUrl = ConfigurationManager.AppSettings["registerUrl"];
                 string redisUrl = ConfigurationManager.AppSettings["redisUrl"];
-                int databaseIndex = int.Parse(ConfigurationManager.AppSettings["databaseIndex"]);
                 var builder = new RedisDirectoryBuilder(registerUrl, redisUrl);
                 builder.Build(new MySelfInfo()
                 {
